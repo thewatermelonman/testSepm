@@ -44,19 +44,16 @@ const routes = [{
 }, {
   path: 'exercises',
   children: [{
-    path: '',
-    canActivate: (0,_angular_router__WEBPACK_IMPORTED_MODULE_8__.mapToCanActivate)([_guards_auth_guard__WEBPACK_IMPORTED_MODULE_2__.AuthGuard]),
+    path: '' /*, canActivate: mapToCanActivate([AuthGuard])*/,
     component: _components_exercise_exercise_list_exercise_list_component__WEBPACK_IMPORTED_MODULE_6__.ExerciseListComponent
   }, {
-    path: 'create',
-    canActivate: (0,_angular_router__WEBPACK_IMPORTED_MODULE_8__.mapToCanActivate)([_guards_auth_guard__WEBPACK_IMPORTED_MODULE_2__.AuthGuard]),
+    path: 'create' /*, canActivate: mapToCanActivate([AuthGuard])*/,
     component: _components_exercise_exercise_create_exercise_create_component__WEBPACK_IMPORTED_MODULE_5__.ExerciseCreateComponent,
     data: {
       mode: _components_exercise_exercise_create_exercise_create_component__WEBPACK_IMPORTED_MODULE_5__.ExerciseCreateEditMode.create
     }
   }, {
-    path: 'edit/:id',
-    canActivate: (0,_angular_router__WEBPACK_IMPORTED_MODULE_8__.mapToCanActivate)([_guards_auth_guard__WEBPACK_IMPORTED_MODULE_2__.AuthGuard]),
+    path: 'edit/:id' /*,  canActivate: mapToCanActivate([AuthGuard])*/,
     component: _components_exercise_exercise_create_exercise_create_component__WEBPACK_IMPORTED_MODULE_5__.ExerciseCreateComponent,
     data: {
       mode: _components_exercise_exercise_create_exercise_create_component__WEBPACK_IMPORTED_MODULE_5__.ExerciseCreateEditMode.edit
