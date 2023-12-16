@@ -1876,7 +1876,9 @@ class ExerciseListComponent {
     this.loadExercises();
   }
   loadExercises() {
-    this.exercises = [];
+    let a = new src_app_dtos_exercise__WEBPACK_IMPORTED_MODULE_0__.ExerciseDetailDto();
+    a.owner = "me@mail.com";
+    this.exercises = [a];
     this.exerciseServise.getAllUserExercises().subscribe({
       next: data => {
         let tmp = data;
